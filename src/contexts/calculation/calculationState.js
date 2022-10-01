@@ -32,7 +32,7 @@ const CalculationState = (props) => {
 
   const getCalculatedPenalty = (countryId, checkoutDate, checkinDate) => {
     axios
-      .get(`http://localhost:9090l/v1/api/calculation/${countryId}?checkedOutDate=${checkoutDate}&returnedDate=${checkinDate}`, {
+      .get(`http://localhost:9090/v1/api/calculation/${countryId}?checkedOutDate=${checkoutDate}&returnedDate=${checkinDate}`, {
         headers: {
           'Content-Type': 'application/json'
         }
